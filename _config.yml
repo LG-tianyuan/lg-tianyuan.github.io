@@ -4,8 +4,8 @@ SEOTitle: LGT Blog
 header-img: img/home-bg.jpg
 email: 320550662@qq.com
 description: "这里是 @LG-tianyuan林观田 的个人博客 | 向往田猿，向往田园"
-keyword: "林观田, Lgt, LG-tianyuan, blog, 个人网站"
-url: "https://linguantian.me" # your host, for absolute URL
+keyword: "林观田, LGT, LG-tianyuan, blog, 个人网站"
+url: "https://lg-tianyuan.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
