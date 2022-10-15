@@ -31,7 +31,7 @@ Q1： The distinction of systematic erasure code and non-systematic erasure code
 > - Systematic: stores the data in the clear on k of the n disks.
 > - Non-systematic: stores only coding information.
 >
-> ![image-20221009105917422](../../img/post/Erasure_Code-week1/image-20221009105917422.png)
+> ![image-20221009105917422](https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221009105917422.png)
 >
 > - An MDS (“Maximum Distance Separable”) code can reconstruct the data from any m failures.
 
@@ -41,7 +41,7 @@ Q2: The distinction of vertical  code and horizontal  code.
 > - Horizontal: partitions the disks into data disks and coding disks.
 > - Vertical: each disk is required to hold some data and some coding.
 >
-> ![image-20221009111301196](../../img/post/Erasure_Code-week1/image-20221009111301196.png)
+> ![image-20221009111301196](https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221009111301196.png)
 
 ### 3. The Basics: Generator Matrices
 
@@ -54,10 +54,10 @@ Q2: The distinction of vertical  code and horizontal  code.
 >   - Addition = XOR
 >   - Multiplication uses special libraries (可转换成addition？)
 > - An example of GF(2^3)
->   - ![image-20221010135325575](../../img/post/Erasure_Code-week1/image-20221010135325575.png)
->   - <img src="../../img/post/Erasure_Code-week1/image-20221010135411202.png" alt="image-20221010135411202"  />
+>   - ![image-20221010135325575](https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010135325575.png)
+>   - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010135411202.png" alt="image-20221010135411202"  />
 
-<img src="../../img/post/Erasure_Code-week1/image-20221009144918757.png" alt="image-20221009144918757"  />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221009144918757.png" alt="image-20221009144918757"  />
 
 （r rows of w-bit symbols from each of n disks）
 
@@ -67,9 +67,9 @@ Q2: The distinction of vertical  code and horizontal  code.
 - Step #2: Rewrite this equation so that looks like math.
 - Step #3: Invert B and multiply it by both sides of the equation.
 
-<img src="../../img/post/Erasure_Code-week1/image-20221009150637406.png" alt="image-20221009150637406" style="zoom:80%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221009150637406.png" alt="image-20221009150637406" style="zoom:80%;" />
 
-<img src="../../img/post/Erasure_Code-week1/image-20221009150946158.png" alt="image-20221009150946158" style="zoom:80%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221009150946158.png" alt="image-20221009150946158" style="zoom:80%;" />
 
 ### 4. Reed-Solomon Codes（所罗门码）
 
@@ -96,7 +96,7 @@ Q2: The distinction of vertical  code and horizontal  code.
 
 A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword, equals a vector of zeros.
 
-<img src="../../img/post/Erasure_Code-week1/image-20221010114639007.png" alt="image-20221010114639007" style="zoom:80%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010114639007.png" alt="image-20221010114639007" style="zoom:80%;" />
 
 ##### 5.2.2 Decoding with a Parity Check Matrix
 
@@ -106,7 +106,7 @@ A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword
 
 ### 6. Linux RAID-6
 
-<img src="../../img/post/Erasure_Code-week1/image-20221010124856042.png" alt="image-20221010124856042" style="zoom: 67%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010124856042.png" alt="image-20221010124856042" style="zoom: 67%;" />
 
 ### 7. EVENODD（奇偶校验）
 
@@ -121,11 +121,11 @@ A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword
 #### 7.2 Example about Encoding
 
 - P drive
-  - <img src="../../img/post/Erasure_Code-week1/image-20221010144421456.png" alt="image-20221010144421456" style="zoom: 67%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010144421456.png" alt="image-20221010144421456" style="zoom: 67%;" />
 - Q drive: each diagonal chain is missing one data drive
-  - <img src="../../img/post/Erasure_Code-week1/image-20221010144542433.png" alt="image-20221010144542433" style="zoom: 67%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010144542433.png" alt="image-20221010144542433" style="zoom: 67%;" />
   - S equals the XOR of all of the bits in P and Q
-    - <img src="../../img/post/Erasure_Code-week1/image-20221010144941050.png" alt="image-20221010144941050" style="zoom:80%;" />
+    - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010144941050.png" alt="image-20221010144941050" style="zoom:80%;" />
 
 #### 7.4 Benefits and Downsides
 
@@ -146,7 +146,7 @@ A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword
 - Easiest explanation is to convert an instance of EVENODD to an instance of RDP.
   - First, get rid of S and P.
   - Then make the last data disk instead be the P disk.
-  - <img src="../../img/post/Erasure_Code-week1/image-20221010151724726.png" alt="image-20221010151724726" style="zoom:80%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010151724726.png" alt="image-20221010151724726" style="zoom:80%;" />
 
 #### 8.2 Benefits and Downsides
 
@@ -166,7 +166,7 @@ A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword
 - Vertical、Systematic、MDS
 - n must be prime, r = n
 - example
-  - <img src="../../img/post/Erasure_Code-week1/image-20221010152727351.png" alt="image-20221010152727351" style="zoom: 67%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221010152727351.png" alt="image-20221010152727351" style="zoom: 67%;" />
 
 #### 9.2 Benefits and Downsides
 
@@ -202,7 +202,7 @@ A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword
    - Generator Matrix: nr x kr matrix of w-bit words/symbols, [详见3.1](#3.1 Encoding with Generator Matrices)
    - Parity-Check Matrix: an n × m matrix which, when multiplied by the codeword, equals a vector of zeros. [详见5.2](#5.2 Parity Check Matrix（奇偶校验矩阵）)
    - Vandermonde matrix: 如下形式
-     - <img src="../../img/post/Erasure_Code-week1/image-20221011145845369.png" alt="image-20221011145845369" style="zoom:80%;" />
+     - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221011145845369.png" alt="image-20221011145845369" style="zoom:80%;" />
 
 3. 存在问题
 
@@ -244,7 +244,7 @@ A Parity Check Matrix is an n × m matrix which, when multiplied by the codeword
 
 ### 4. LRC in Windows Azure Storage
 
-<img src="../../img/post/Erasure_Code-week1/image-20221011100010217.png" alt="image-20221011100010217" style="zoom: 67%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221011100010217.png" alt="image-20221011100010217" style="zoom: 67%;" />
 
 ### 5. PMDS and SD Codes
 
@@ -254,7 +254,7 @@ Q: The distinction of PMDS Codes and SD Codes.
 >   - m rows, n columns → n drives, m × n sectors
 >   - r row parities in each row
 >   - s global parities
->   - <img src="../../img/post/Erasure_Code-week1/image-20221011095303499.png" alt="image-20221011095303499" style="zoom: 67%;" />
+>   - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221011095303499.png" alt="image-20221011095303499" style="zoom: 67%;" />
 > - Difference
 >   - PMDS: tolerate **r failures per row** and s additional anywhere
 >     - Studied in paper *[“Partial-MDS codes and their application to RAID type of architectures”](https://researchain.net/archives/pdf/Partial-Mds-Codes-And-Their-Application-To-Raid-Type-Of-Architectures-2580416)*
@@ -262,7 +262,7 @@ Q: The distinction of PMDS Codes and SD Codes.
 >   - Any (r, s) PMDS code is an (r, s) SD code
 >   - Example
 >     - PMDS Codes tolerate both case I and II, but SD codes only tolerate case I 
->     - <img src="../../img/post/Erasure_Code-week1/image-20221011095630010.png" alt="image-20221011095630010" style="zoom:80%;" />
+>     - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221011095630010.png" alt="image-20221011095630010" style="zoom:80%;" />
 >     - why?
 
 ### 6. Research Chanllenge
@@ -279,11 +279,11 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
 
 #### Simple Regenerating Codes
 
-<img src="../../img/post/Erasure_Code-week1/image-20221011115816352.png" alt="image-20221011115816352" style="zoom:80%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221011115816352.png" alt="image-20221011115816352" style="zoom:80%;" />
 
 #### Rotated Reed-Solomon Codes
 
-<img src="../../img/post/Erasure_Code-week1/image-20221011120415884.png" alt="image-20221011120415884" style="zoom:80%;" />
+<img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221011120415884.png" alt="image-20221011120415884" style="zoom:80%;" />
 
 ### 7. Summary or Leftover Problem
 
@@ -316,7 +316,7 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
   - normalized **storage overhead** is n/k = 1 + (l + r)/k.
 
 - example: (6, 2, 2)LRC
-  - <img src="../../img/post/Erasure_Code-week1/image-20221014094647125.png" alt="image-20221014094647125" style="zoom:80%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014094647125.png" alt="image-20221014094647125" style="zoom:80%;" />
   - **Tolerate arbitrary 3 failures and information-theoretically decodable 4 failures.**
 
 #### 1.2 Fault Tolerance
@@ -333,7 +333,7 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
 #### 1.3 Reliability
 
 - Markov Reliability Model
-  - <img src="../../img/post/Erasure_Code-week1/image-20221014103226096.png" alt="image-20221014103226096" style="zoom:80%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014103226096.png" alt="image-20221014103226096" style="zoom:80%;" />
   - λ denote the failure rate of a **single fragment**
   - State 6 represents a state where there are four decodable failures, while 6F represents non-decodable
   - pd denote **the percentage of decodable four failure cases**
@@ -353,7 +353,7 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
 ##### 1.4.1  Stream Layer
 
 - Architecture
-  - <img src="../../img/post/Erasure_Code-week1/image-20221014112226271.png" alt="image-20221014112226271" style="zoom: 67%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014112226271.png" alt="image-20221014112226271" style="zoom: 67%;" />
 - main components
   - Stream Managers (SM)
   - Extent Nodes (EN)
@@ -415,15 +415,15 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
 > - Definition of some metrics
 >
 >   - average degraded read cost
->     - <img src="../../img/post/Erasure_Code-week1/image-20221014153554819.png" alt="image-20221014153554819" style="zoom: 67%;" />
+>     - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014153554819.png" alt="image-20221014153554819" style="zoom: 67%;" />
 >     - the average cost of repairing data blocks
 >
 >   - average repair cost(ARC)
->     - <img src="../../img/post/Erasure_Code-week1/image-20221014153103569.png" alt="image-20221014153103569" style="zoom: 67%;" />
+>     - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014153103569.png" alt="image-20221014153103569" style="zoom: 67%;" />
 >     - the average cost of repairing a failed block.
 >
 >   - normalized repair cost(NRC)
->     - <img src="../../img/post/Erasure_Code-week1/image-20221014153302324.png" alt="image-20221014153302324" style="zoom: 67%;" />
+>     - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014153302324.png" alt="image-20221014153302324" style="zoom: 67%;" />
 >     - the average cost of repairing a failed data block.
 >
 >   - mean time to data loss (MTTDL)
@@ -440,7 +440,7 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
 
 - Special: Xorbas ensures that any of the global parities can be reconstructed by the remaining global parities and the two local parities.
 - Example
-  - <img src="../../img/post/Erasure_Code-week1/image-20221014154131510.png" alt="image-20221014154131510" style="zoom:80%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014154131510.png" alt="image-20221014154131510" style="zoom:80%;" />
 
 #### 2.2 Azure-LRC
 
@@ -464,7 +464,7 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
   - have l + 1 local parities,  l = k/r(向上取整), k + l + 1 < n
   - **a local parity added to a ‘group’ of one global parity**
 - Example
-  - <img src="../../img/post/Erasure_Code-week1/image-20221014160326918.png" alt="image-20221014160326918" style="zoom:80%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014160326918.png" alt="image-20221014160326918" style="zoom:80%;" />
 
 #### 2.4 Optimal-LRCs
 
@@ -473,9 +473,9 @@ Enumerate Decoding Equations → Find Shortest Path on Weighted Graph
   - k data blocks and m global parities are divided into groups of size r, and a local parity is added to each group.
   - requires that **n mod (r + 1) ≠ 1**
   - the minimum distance
-    - <img src="../../img/post/Erasure_Code-week1/image-20221014152019422.png" alt="image-20221014152019422" style="zoom: 67%;" />
+    - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014152019422.png" alt="image-20221014152019422" style="zoom: 67%;" />
 - Example
-  - <img src="../../img/post/Erasure_Code-week1/image-20221014160416308.png" alt="image-20221014160416308" style="zoom:80%;" />
+  - <img src="https://github.com/LG-tianyuan/lg-tianyuan.github.io/tree/master/img/post/Erasure_Code-week1/image-20221014160416308.png" alt="image-20221014160416308" style="zoom:80%;" />
 
 ### 3. Summary or Leftover Problems
 
