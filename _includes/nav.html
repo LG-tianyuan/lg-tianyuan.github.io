@@ -14,6 +14,29 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+                <div class="switch-btn">
+                    <div class="btn-light" id="d2n"></div>
+                </div>
+                <script>
+                    var d2n =document.getElementById('d2n');
+                    var switch_btn = document.querySelector('.switch-btn');
+                    var body = document.body;
+                    var temp = 1;
+                    d2n.addEventListener('click',function(){
+                        if(temp==1){
+                            this.className = 'btn-dark';
+                            temp=0;
+                            switch_btn.style.border= '2px solid  rgb(11, 243, 81)';
+                            body.style.backgroundColor= '#d6dec6';
+                            // #edd9b4 #ebd6b7
+                        }else{
+                            this.className = 'btn-light';
+                            temp=1;
+                            switch_btn.style.border= '2px solid black';
+                            body.style.backgroundColor= '#fff';
+                        }
+                    })
+                </script>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
