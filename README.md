@@ -1,4 +1,4 @@
-[LGT Blog](https://linguantian.me)
+[LGT Blog](https://lg-tianyuan.github.io/)
 ================================
 
 ### Thanks
