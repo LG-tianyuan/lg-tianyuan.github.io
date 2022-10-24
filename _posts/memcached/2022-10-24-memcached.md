@@ -8,7 +8,6 @@ header-style: text
 catalog: true
 tags:
     - memcached
-    - LRC
     - 笔记
 ---
 
